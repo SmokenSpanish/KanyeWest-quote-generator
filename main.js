@@ -10,6 +10,9 @@ function kanyeWestGenerate() {
 .then((data) => {
     kanyeWestQuote.textContent = data.quote;
 })
+.then(() => {
+    kanyeWestQuote.classList.add('content__title_active');
+})
 }
 
 
